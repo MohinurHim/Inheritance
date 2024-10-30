@@ -28,7 +28,7 @@ class Flower(Plant): # класс цветов
 
 class Fruit(Plant): # класс фруктов
     def __init__(self, name):
-        Plant.__init__(self, name)
+        super().__init__(name)
         self.edible = True # Переопределяем атрибут
 
 
